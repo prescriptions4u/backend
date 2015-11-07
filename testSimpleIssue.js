@@ -5,7 +5,12 @@ var settings = {
 }
 var colu = new Colu(settings)
 var asset = {
-    amount: 1000000
+    amount: 25,
+    metadata: {
+    	'assetName': 'Vallium',
+    	'issuer': 'Dr. Rob Ryan',
+    	'description': '10 mg of Vallium to Patient X'
+    }
 }
 colu.on('connect', function () {
     colu.issueAsset(asset, function (err, body) {

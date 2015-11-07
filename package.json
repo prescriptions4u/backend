@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "pharma blockchain",
+  "main": "example.js",
+  "dependencies": {
+    "colu": "^0.8.4",
+    "fs": "^0.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "colu": "^0.8.4",
+    "data-storage": "0.0.5",
+    "http": "0.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prescriptions4u/backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prescriptions4u/backend/issues"
+  },
+  "homepage": "https://github.com/prescriptions4u/backend#readme"
+}

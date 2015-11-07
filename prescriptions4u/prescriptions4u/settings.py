@@ -26,10 +26,12 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = ('/home/leo/repos/bhack/frontend')
 
 # Application definition
 
 INSTALLED_APPS = (
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,4 +81,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/home/leo/repos/bhack/frontend/'
+
+STATIC_ROOT = ('/home/leo/repos/bhack/frontend/',
+              '/home/leo/repos/bhack/frontend/css/',
+              '/home/leo/repos/bhack/frontend/fonts/',
+              '/home/leo/repos/bhack/frontend/img/',
+              '/home/leo/repos/bhack/frontend/js/'
+              )

@@ -1,0 +1,6 @@
+from django.contrib import admin
+from prescriptions4u.models import Author
+
+class DoctorAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Docotr, DoctorAdmin)

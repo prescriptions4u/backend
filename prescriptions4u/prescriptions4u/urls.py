@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/', views.IndexView.as_view()),
     url(r'^doctor/', views.DoctorView.as_view()),
-    url(r'^pharmacist/', views.PharmacistView.as_view(), name = 'pharmacist')
+    url(r'^pharmacist/', views.PharmacistView.as_view(), name = 'pharmacist'),
+    url(r'^transaction/', views.transaction)
 	
 ]

@@ -13,3 +13,11 @@ class DoctorView(TemplateView):
 
 class PharmacistView(TemplateView):
 	template_name = "pharmacist.html"
+
+# class TransactionView(TemplateView):
+# 	template_name = "transaction.html"
+
+def transaction(request):
+	if request.method == "POST":
+		print "class"
+		return HttpResponse("class")

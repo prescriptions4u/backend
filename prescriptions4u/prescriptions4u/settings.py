@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -25,8 +24,6 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
-TEMPLATE_DIRS = ('/home/leo/repos/bhack/frontend')
 
 # Application definition
 
@@ -85,12 +82,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+try:
+    from local_settings import *
+except ImportError:
+    pass
 
-STATIC_URL = '/home/leo/repos/bhack/frontend/'
-
-STATIC_ROOT = ('/home/leo/repos/bhack/frontend/',
-              '/home/leo/repos/bhack/frontend/css/',
-              '/home/leo/repos/bhack/frontend/fonts/',
-              '/home/leo/repos/bhack/frontend/img/',
-              '/home/leo/repos/bhack/frontend/js/'
-              )
+              
